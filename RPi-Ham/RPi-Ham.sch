@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:RPi-Ham-cache
-LIBS:raspi_audio-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1207,4 +1206,82 @@ Wire Wire Line
 	5050 7150 5400 7150
 Wire Wire Line
 	5400 7150 5400 7050
+$Comp
+L Relay:SILxx-1Axx-71x K1
+U 1 1 5D0F528F
+P 6150 4500
+F 0 "K1" H 6480 4546 50  0000 L CNN
+F 1 "SILxx-1Axx-71x" H 6480 4455 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_StandexMeder_SIL_Form1A" H 6500 4450 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_SIL.pdf" H 6150 4500 50  0001 C CNN
+	1    6150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:SILxx-1Axx-71x K2
+U 1 1 5D0F5325
+P 6150 5750
+F 0 "K2" H 6480 5796 50  0000 L CNN
+F 1 "SILxx-1Axx-71x" H 6480 5705 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPST_StandexMeder_SIL_Form1A" H 6500 5700 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_SIL.pdf" H 6150 5750 50  0001 C CNN
+	1    6150 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5D0F5C9C
+P 5950 4200
+F 0 "#PWR0132" H 5950 3950 50  0001 C CNN
+F 1 "GND" H 5955 4027 50  0000 C CNN
+F 2 "" H 5950 4200 50  0001 C CNN
+F 3 "" H 5950 4200 50  0001 C CNN
+	1    5950 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0133
+U 1 1 5D0F5DE7
+P 5950 5450
+F 0 "#PWR0133" H 5950 5200 50  0001 C CNN
+F 1 "GND" H 5955 5277 50  0000 C CNN
+F 2 "" H 5950 5450 50  0001 C CNN
+F 3 "" H 5950 5450 50  0001 C CNN
+	1    5950 5450
+	-1   0    0    1   
+$EndComp
+Text GLabel 9200 3550 0    50   Input ~ 0
+PTTL0
+Text GLabel 9200 3650 0    50   Input ~ 0
+PTTL1
+Text GLabel 5950 4800 3    50   Input ~ 0
+PTTL0
+Text GLabel 5950 6050 3    50   Input ~ 0
+PTTL1
+$Comp
+L power:GND #PWR0134
+U 1 1 5D0F6193
+P 6350 6050
+F 0 "#PWR0134" H 6350 5800 50  0001 C CNN
+F 1 "GND" H 6355 5877 50  0000 C CNN
+F 2 "" H 6350 6050 50  0001 C CNN
+F 3 "" H 6350 6050 50  0001 C CNN
+	1    6350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 5D0F6207
+P 6350 4800
+F 0 "#PWR0135" H 6350 4550 50  0001 C CNN
+F 1 "GND" H 6355 4627 50  0000 C CNN
+F 2 "" H 6350 4800 50  0001 C CNN
+F 3 "" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 4200 1    50   Input ~ 0
+PTT0
+Text GLabel 6350 5450 1    50   Input ~ 0
+PTT1
 $EndSCHEMATC
