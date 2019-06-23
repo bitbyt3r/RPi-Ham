@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RPi-Ham)(type KiCad)(uri D:/git/RPi-Ham/RPi-Ham)(options "")(descr ""))
+)

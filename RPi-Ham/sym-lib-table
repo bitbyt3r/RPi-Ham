@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name RPi-Ham-rescue)(type Legacy)(uri ${KIPRJMOD}/RPi-Ham-rescue.lib)(options "")(descr ""))
+)

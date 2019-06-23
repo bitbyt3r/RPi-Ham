@@ -1,0 +1,87 @@
+
+(rules PCB RPi-Ham
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 2469)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.1)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.9)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C1-Pad1)" INL INR "Net-(C2-Pad1)" Earth VCC VDD "Net-(C6-Pad1)"
+    "Net-(C11-Pad1)" "Net-(C11-Pad2)" "Net-(C12-Pad1)" "Net-(C12-Pad2)" "Net-(C13-Pad2)" "Net-(C13-Pad1)" GND "Net-(C14-Pad2)"
+    "Net-(C15-Pad1)" "Net-(C15-Pad2)" "Net-(C16-Pad2)" "Net-(C17-Pad2)" "Net-(C18-Pad1)" "Net-(C19-Pad1)" RXR0 TXR0
+    "Net-(J2-Pad8)" "Net-(J2-Pad7)" "Net-(J2-Pad1)" TXR1 RXR1 "Net-(J4-Pad1)" "Net-(J4-Pad7)" "Net-(J4-Pad8)"
+    "Net-(J5-Pad8)" "Net-(J5-Pad7)" "Net-(J5-Pad6)" "Net-(J5-Pad5)" "Net-(J5-Pad4)" "Net-(J5-Pad3)" "Net-(J5-Pad2)" "Net-(J5-Pad1)"
+    OUTL PTT0 "Net-(J7-Pad1)" "Net-(J7-Pad2)" "Net-(J7-Pad3)" "Net-(J7-Pad4)" "Net-(J7-Pad5)" "Net-(J7-Pad6)"
+    "Net-(J7-Pad7)" "Net-(J7-Pad8)" "Net-(J8-Pad3)" "Net-(J8-Pad5)" "Net-(J8-Pad7)" TXD0 RXD0 "Net-(J8-Pad11)"
+    BCK "Net-(J8-Pad13)" "Net-(J8-Pad15)" "Net-(J8-Pad16)" "Net-(J8-Pad18)" "Net-(J8-Pad19)" "Net-(J8-Pad21)" "Net-(J8-Pad22)"
+    "Net-(J8-Pad23)" "Net-(J8-Pad24)" "Net-(J8-Pad26)" "Net-(J8-Pad27)" "Net-(J8-Pad28)" "Net-(J8-Pad29)" "Net-(J8-Pad31)" TXD1
+    RXD1 LRCK "Net-(J8-Pad36)" "Net-(J8-Pad37)" DOUT DIN PTT1 OUTR
+    "Net-(R1-Pad1)" "Net-(U1-Pad13)" "Net-(U1-Pad14)" "Net-(U1-Pad17)" "Net-(U1-Pad19)" "Net-(R2-Pad1)" "Net-(X1-Pad1)" SYSCLK
+    "Net-(J1-Pad4)" "Net-(J1-Pad3)" "Net-(J3-Pad3)" "Net-(J3-Pad4)" "Net-(J2-Pad2)" "Net-(J4-Pad2)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
