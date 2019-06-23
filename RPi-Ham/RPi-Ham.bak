@@ -1107,7 +1107,7 @@ U 1 1 5D1CBE97
 P 3450 6700
 F 0 "J1" H 3500 7017 50  0000 C CNN
 F 1 "Conn_02x03_Counter_Clockwise" H 3500 6926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 3450 6700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3450 6700 50  0001 C CNN
 F 3 "~" H 3450 6700 50  0001 C CNN
 	1    3450 6700
 	-1   0    0    1   
@@ -1118,7 +1118,7 @@ U 1 1 5D2BF0D9
 P 6100 7050
 F 0 "J3" H 6150 7367 50  0000 C CNN
 F 1 "Conn_02x03_Counter_Clockwise" H 6150 7276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 6100 7050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6100 7050 50  0001 C CNN
 F 3 "~" H 6100 7050 50  0001 C CNN
 	1    6100 7050
 	-1   0    0    1   
